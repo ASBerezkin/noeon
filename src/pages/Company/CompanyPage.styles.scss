@@ -1,0 +1,59 @@
+@import "src/mixins";
+
+.companyBlock {
+  margin-top: calc(566px + 56px + 85px);
+  @include mediaIpadPro {
+    margin-top: calc(573px + 56px + 85px);
+  }
+  &__contacts {
+    margin-top: 102px;
+    @include mediaIpadPro {
+      margin-top: 139px;
+    }
+    @include mediaMacbookPro {
+      margin-top: 126px;
+    }
+  }
+  &__footer {
+    margin-top: 271px;
+    @include mediaIpadPro {
+      margin-top: 184px;
+    }
+    @include mediaMacbookPro {
+      margin-top: 255px;
+    }
+    .text {
+      text-align: center;
+    }
+  }
+}
+
+.companyTeam {
+  margin-top: 200px;
+  &__cardWrapper {
+    margin-top: 24px;
+    @include mediaIpadPro {
+      margin-top: 89px;
+    }
+    @include mediaMacbookPro {
+      margin-top: 50px;
+    }
+    @include mediaMacbookProLarge {
+      margin-top: 105px;
+    }
+  }
+}
+
+.company__step-wrapper {
+  width: 100%;
+
+  @include mediaIpadPro {
+    width: 45%;
+  }
+  @include mediaMacbookPro {
+    width: 33%;
+  }
+  @include mediaMacbookProLarge {
+    max-width: 418px;
+  }
+}

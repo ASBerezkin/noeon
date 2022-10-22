@@ -1,0 +1,76 @@
+@import 'src/mixins';
+
+.cardTeam {
+  position: relative;
+  height: 325px;
+  width: 100%;
+  border-radius: 27px;
+  background-color: #181818;
+  padding-top: 18px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @include mediaIpadPro {
+    max-width: 323px;
+    height: 375px;
+  }
+
+  @include mediaMacbookPro {
+    max-width: 320px;
+    height: 359px;
+  }
+
+  @include mediaMacbookProLarge {
+    max-width: 360px;
+  }
+
+  &__teamName {
+    display: block;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 53px;
+    color: var(--color-white-100);
+    max-width: 60%;
+    @include mediaIpadPro {
+      font-size: 40px;
+    }
+    @include mediaMacbookPro {
+      font-size: 45px;
+    }
+  }
+
+  &__teamPost {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: var(--color-white-100);
+    margin: 10px 0 0;
+    max-width: 142px;
+  }
+
+  &__teamPhoto {
+    width: 100%;
+    max-width: 325px;
+    max-height: 359px;
+    object-fit: contain;
+    margin-top: -18px;
+    position: absolute;
+    right: -71px;
+    bottom: 0;
+  }
+
+  &__education {
+    display: block;
+    margin-top: 18px;
+    font-size: 16.6054px;
+    line-height: 19px;
+    color: #A6A6A6;
+    max-width: 116px;
+    @include mediaIpadPro {
+      font-size: 18.4418px;
+      line-height: 22px;
+    }
+  }
+}

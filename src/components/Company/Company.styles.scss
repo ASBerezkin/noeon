@@ -1,0 +1,71 @@
+@import 'src/mixins';
+
+.company {
+  margin-top: 111px;
+
+  &__content {
+
+    @include mediaIpadPro {
+      display: flex;
+      gap: 26px;
+    }
+
+    @include mediaMacbookPro {
+      gap: 87px;
+    }
+
+    &-text {
+    }
+  }
+
+  &__city {
+    width: 100%;
+    border-radius: 27px;
+
+    @include mediaIpadPro {
+      max-width: 395px;
+    }
+
+    @include mediaMacbookPro {
+      max-width: 588px;
+    }
+  }
+
+  &__title {
+    @include title;
+    margin-top: 20px;
+    margin-bottom: 12px;
+
+    @include mediaIpadPro {
+      margin-top: 0;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__text {
+    @include text;
+    margin: 0;
+  }
+
+  &__team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 253px;
+    justify-content: space-between;
+
+    @include mediaIpadPro {
+      margin-top: 150px;
+      gap: 89px;
+    }
+
+    @include mediaMacbookPro {
+      gap: 50px;
+      justify-content: center;
+    }
+
+    @include mediaMacbookProLarge {
+      gap: 105px;
+    }
+  }
+}

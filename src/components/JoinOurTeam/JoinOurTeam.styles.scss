@@ -1,0 +1,26 @@
+@import 'src/mixins';
+
+.joinOurTeam {
+  margin-top: 155px;
+  &__title {
+    @include title;
+    text-align: center;
+  }
+  &__text {
+    @include text;
+    text-align: center;
+    span {
+      margin-top: 28px;
+      display: block;
+      font-weight: 700;
+      a {
+        @include text;
+      }
+    }
+  }
+  &__address {
+    @include text;
+    text-align: center;
+    margin-top: 55px;
+  }
+}

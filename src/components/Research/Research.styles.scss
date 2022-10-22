@@ -1,0 +1,49 @@
+@import 'src/mixins';
+
+.research {
+  margin-top: 194px;
+  @include mediaIpadPro {
+    margin-top: 136px;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include text;
+    font-weight: 300;
+    @include mediaMacbookPro {
+      max-width: 1100px;
+    }
+  }
+
+  &__steps {
+    margin-top: 127px;
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+    align-items: center;
+
+    @include mediaIpadPro {
+      margin-top: 125px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 56px 0;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @include mediaMacbookPro {
+      justify-content: space-between;
+      gap: 194px 0;
+      align-items: flex-start;
+    }
+    &__wrapper {
+      @include mediaIpadPro {
+        max-width: 30%;
+      }
+    }
+  }
+}
