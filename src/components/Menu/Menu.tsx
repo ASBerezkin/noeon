@@ -6,7 +6,8 @@ import {useLocation, useNavigate} from 'react-router-dom';
 const menuItems = [
     {id: 'research', name: 'Research'},
     {id: 'company', name: 'Company'},
-    {id: 'joinOurTeam', name: 'Join Our Team'}
+    {id: 'grants', name: 'Grants'},
+    {id: 'joinOurTeam', name: 'Join Our Team'},
 ]
 
 export const Menu: FC = () => {
@@ -15,6 +16,9 @@ export const Menu: FC = () => {
     const [active, setActive] = useState(() => {
         if (location.pathname === '/company') {
             return 'company'
+        }
+        if (location.pathname === '/grants') {
+            return 'grants'
         }
         if (location.state) {
             return location.state
@@ -35,6 +39,10 @@ export const Menu: FC = () => {
         if (menuId === 'company') {
             navigate('/company')
             setActive(menuId)
+        }
+        else if (menuId === 'grants') {
+            navigate('/grants')
+            setActive(menuId)
         } else {
             navigate('/', { state: menuId })
             const elementToScroll = document.querySelector(`#${menuId}`)
@@ -42,7 +50,7 @@ export const Menu: FC = () => {
             elementToScroll?.scrollIntoView({behavior: 'smooth', block: "start"})
         }
     }
-
+console.log(menuItems.map(menuItem => menuItem))
     return <div className="menu__wrapper">
         <div className="menu__logo">
             <Logo/>

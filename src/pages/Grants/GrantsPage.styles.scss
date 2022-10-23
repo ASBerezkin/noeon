@@ -1,0 +1,81 @@
+@import "src/mixins";
+
+.grantsBlock {
+  margin-top: calc(566px + 56px + 85px);
+  @include mediaIpadPro {
+    margin-top: calc(573px + 56px + 85px);
+  }
+  &__heading-who {
+    @include title;
+    text-align: center;
+    margin-top: 162px;
+    margin-bottom: 38px;
+
+    @include mediaIpadPro {
+      margin-top: 192px;
+      margin-bottom: 72px;
+    }
+    @include mediaMacbookPro {
+      margin-top: 254px;
+    }
+    & + div {
+      text-align: center;
+    }
+  }
+  &__fuding {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin-top: 80px;
+    @include mediaMacbookPro {
+      margin-top: 270px;
+    }
+  }
+  &__downImage {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    display: none;
+
+    @include mediaMacbookProLarge {
+      display: flex;
+      flex-direction: column;
+      row-gap: 38px;
+    }
+  }
+  &__table {
+    width: 100%;
+    border: 1px solid #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+
+      justify-content: center;
+      width: 720px;
+    }
+  }
+  &__container {
+    padding: 32px;
+  }
+  &__list {
+    list-style: none;
+
+    li {
+      width: 539px;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 80px;
+    }
+    li:before {
+      position: absolute;
+      top: 20px;
+      left: -50px;
+      content: url("../Grants/Line.png");
+    }
+  }
+  &__containerList {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+  }
+}

@@ -8,8 +8,8 @@ export const JoinOurTeam: FC = () => {
             We are looking for specialist for full-time employment and for part-time collaboration.
             <span>Contact us <a href="mailto:hiring@noeon.ai">hiring@noeon.ai</a></span>
         </p>
-        <p className="joinOurTeam__address">Noeon Research. Midtown Tower 18F,
-            9-7-1 Akasaka, Minato-ku, Tokyo, Japan
+        <p className="joinOurTeam__address">Noeon Research, Midtown Tower 18F,<br/>
+            9-7-1 Akasaka, Minato-ku, Tokyo, Japan<br/>
             2022</p>
     </div>
 }

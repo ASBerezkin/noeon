@@ -2,7 +2,7 @@ import React from "react";
 import {Menu} from "../../components/Menu/Menu";
 import {BannerBlock} from "../../components/BannerBlock/BannerBlock";
 import {Research} from "../../components/Research/Research";
-import {Company} from "../../components/Company/Company";
+import {CompanyLocation} from "../../components/Company/CompanyLocation";
 import {JoinOurTeam} from "../../components/JoinOurTeam/JoinOurTeam";
 
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
         <Menu/>
         <BannerBlock/>
         <Research/>
-        <Company/>
+        <CompanyLocation/>
         <JoinOurTeam/>
     </>
 }
