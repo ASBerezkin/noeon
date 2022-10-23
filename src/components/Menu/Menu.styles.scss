@@ -4,7 +4,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 6px 8px;
   max-width: 453px;
   margin: 19px auto 0;
@@ -13,6 +13,7 @@
   backdrop-filter: blur(10px);
   border-radius: 25px;
   height: 50px;
+  flex-wrap: wrap;
 
   @include mediaIpadPro {
     margin-left: auto;
@@ -22,6 +23,7 @@
 
   &__wrapper {
     z-index: 10;
+    position: relative;
     @include mediaIpadPro {
       position: relative;
     }

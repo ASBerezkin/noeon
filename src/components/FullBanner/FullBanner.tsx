@@ -1,12 +1,14 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import './FullBanner.styles.scss'
-import banner from './fullBanner.png'
 
 type TFullBannerProps = {
     src: string
+    withMargin?: boolean
 }
-export const FullBanner: FC<TFullBannerProps> = ({src}) => {
-    return <div className="fullBanner">
-        <img src={src} alt='Tokyo' />
+export const FullBanner: FC<TFullBannerProps> = ({src, withMargin = false}) => {
+    const classNameWrapper = withMargin ? 'fullBanner fullBanner_withMargin' : "fullBanner"
+
+    return <div className={classNameWrapper}>
+        <img src={src} alt='Tokyo'/>
     </div>
 }

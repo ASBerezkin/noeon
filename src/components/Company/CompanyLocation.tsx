@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import "./CompanyLocation.styles.scss";
 import city from "./image_screen_2.png";
+import { Link } from 'react-router-dom'
 
 export const CompanyLocation: FC = () => {
   return (
@@ -13,9 +14,9 @@ export const CompanyLocation: FC = () => {
             We are located in Tokyo, Midtown Tower 18F
           </p>
           <div>
-            <a className="company__link" href="company">
+            <Link className="company__link" to="company">
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
       </div>

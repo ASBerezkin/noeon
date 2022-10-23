@@ -65,17 +65,73 @@
       width: 539px;
       color: rgba(255, 255, 255, 0.82);
       margin-bottom: 80px;
+      position: relative;
+
+      @include mediaIpadPro {
+        padding-left: 47px;
+      }
     }
     li:before {
+      content: "";
+      width: 19px;
+      height: 1px;
+      background-color: var(--color-white-082);
       position: absolute;
-      top: 20px;
+      top: 50%;
       left: -50px;
-      content: url("../Grants/Line.png");
+      transform: translateY(-100%);
+
+      @include mediaIpadPro {
+        width: 68px;
+      }
     }
   }
   &__containerList {
     display: flex;
     position: relative;
-    justify-content: flex-end;
+  }
+}
+
+.shadowSteps {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 270px;
+
+  &__wrapper {
+
+  }
+  &__item {
+    width: 100%;
+    max-width: 100%;
+
+    @include mediaIpadPro {
+      max-width: 45%;
+    }
+  }
+}
+
+.applySteps {
+  margin-top: 180px;
+  text-align: center;
+  &__title {
+  }
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 660px;
+    gap: 109px;
+  }
+}
+
+.apply {
+  text-align: center;
+  margin-top: 96px;
+
+  @include mediaIpadPro {
+    margin-top: 314px;
   }
 }
