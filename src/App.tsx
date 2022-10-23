@@ -1,10 +1,11 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Company from "./pages/Company/Company";
 import Grants from './pages/Grants/Grants';
 import JoinOurTeam from "./pages/JoinOurTeam/JoinOurTeam";
 import {Menu} from "./components/Menu/Menu";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -12,11 +13,12 @@ function App() {
             <div className="wrapper">
                 <Menu/>
                 <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="company" element={<Company />} />
-                    <Route path="grants" element={<Grants />} />
-                    <Route  path="join-our-team" element={<JoinOurTeam />} />
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="company" element={<Company/>}/>
+                    <Route path="grants" element={<Grants/>}/>
+                    <Route path="join-our-team" element={<JoinOurTeam/>}/>
                 </Routes>
+                <Footer/>
             </div>
         </div>
     );

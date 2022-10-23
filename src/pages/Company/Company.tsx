@@ -95,13 +95,6 @@ const Company = () => {
           </b>
         </p>
       </div>
-      <footer className="companyBlock__footer">
-        <p className="text">
-          Noeon Research, Midtown Tower 18F,
-          <br /> 9-7-1 Akasaka, Minato-ku, Tokyo, Japan
-          <br /> 2022
-        </p>
-      </footer>
     </>
   );
 };
