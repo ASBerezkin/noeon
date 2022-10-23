@@ -2,7 +2,6 @@ import React from "react";
 import "../../base.scss";
 import "../../components/Research/Research.styles.scss";
 import "./CompanyPage.styles.scss";
-import { Menu } from "../../components/Menu/Menu";
 import { FullBanner } from "../../components/FullBanner/FullBanner";
 import {
   team,
@@ -18,7 +17,6 @@ import banner from './fullBanner.png'
 const Company = () => {
   return (
     <>
-      <Menu />
       <FullBanner src={banner}/>
       <div className="companyBlock">
         <h2 className="title">Company</h2>

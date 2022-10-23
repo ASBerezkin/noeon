@@ -135,3 +135,22 @@
     margin-top: 314px;
   }
 }
+
+.deadlinesBlock {
+  margin-top: 193px;
+  @include mediaIpadPro {
+    margin-top: 346px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 98px;
+    margin-top: 103px;
+    @include mediaIpadPro {
+      gap: 189px;
+    }
+    @include mediaMacbookPro {
+      flex-direction: row;
+    }
+  }
+}

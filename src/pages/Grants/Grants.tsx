@@ -1,6 +1,5 @@
 import React from "react";
 import "../../base.scss";
-import {Menu} from "../../components/Menu/Menu";
 import {FullBanner} from "../../components/FullBanner/FullBanner";
 import "./GrantsPage.styles.scss";
 import "../../components/Research/Research.styles.scss";
@@ -10,13 +9,13 @@ import rectFirst from "./grants-rect-first.png";
 import rectSecond from "./grants-rect-second.png";
 import banner from './grants-banner.png'
 import {ShadowStep} from "../../components/ShadowStep/ShadowStep";
-import {fundingText, steps, shadowSteps, applyStep} from "./constants";
+import {fundingText, steps, shadowSteps, applyStep, dedlines} from "./constants";
 import {ApplyStep} from "../../components/ApplyStep/ApplyStep";
+import {Deadlines} from "../../components/Deadlines/Deadlines";
 
 const Grants = () => {
     return (
         <>
-            <Menu/>
             <FullBanner src={banner} withMargin/>
             <div className="grantsBlock">
                 <h2 className="research__title">Grant Topics</h2>
@@ -66,6 +65,12 @@ const Grants = () => {
                 <div className="apply">
                     <div className="h3 title">Apply</div>
                     <p className="text">Just write to us grant@noeon.ai</p>
+                </div>
+                <div className="deadlinesBlock">
+                    <h3 className="title">Deadlines and Competition</h3>
+                    <div className="deadlinesBlock__wrapper">
+                        {dedlines.map(item => <Deadlines {...item} />)}
+                    </div>
                 </div>
             </div>
             <footer className="companyBlock__footer">

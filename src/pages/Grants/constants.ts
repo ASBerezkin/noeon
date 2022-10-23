@@ -1,5 +1,6 @@
 import {TShadowStepProps} from "../../components/ShadowStep/ShadowStep";
 import {TApplyStepProps} from "../../components/ApplyStep/ApplyStep";
+import {TDeadlinesProps} from "../../components/Deadlines/Deadlines";
 
 export const steps = [
     {id: 1, title: "Overcoming limitations of Knowledge Graphs"},
@@ -65,3 +66,11 @@ export const applyStep: TApplyStepProps[] = [
         text: "We will contact you within a week to discuss further details."
     },
 ]
+
+export const dedlines: TDeadlinesProps[] = [{
+    number: '1',
+    text: 'We have no deadlines or competition among participants.'
+}, {
+    number: '2',
+    text: 'We are not looking for a complete application, but instead for a dialogue on how both Noeon and you could benefit from this work.'
+}]
