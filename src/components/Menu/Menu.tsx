@@ -20,6 +20,9 @@ export const Menu: FC = () => {
         if (location.pathname === '/grants') {
             return 'grants'
         }
+        if (location.pathname === '/join-our-team') {
+            return 'join-our-team'
+        }
         if (location.state) {
             return location.state
         }
@@ -32,7 +35,15 @@ export const Menu: FC = () => {
             elementToScroll?.scrollIntoView({behavior: 'smooth', block: "start"})
             navigate('', { replace: true })
         }
-    }, [])
+        if (location.pathname === "/") {
+            setActive("research")
+        }
+        if (location.pathname === "/company") {
+            setActive("company")
+            window.scrollTo(0, 0)
+        }
+
+    }, [location.state, navigate])
 
     const handleClick = (e: MouseEvent<HTMLAnchorElement>, menuId: string) => {
         e.preventDefault();
