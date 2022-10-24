@@ -64,7 +64,7 @@ const Grants = () => {
                 </div>
                 <div className="apply">
                     <div className="h3 title">Apply</div>
-                    <p className="text">Just write to us grant@noeon.ai</p>
+                    <p className="text"><b>Just write to us <a href="mailto:grant@noeon.ai">grant@noeon.ai</a></b></p>
                 </div>
                 <div className="deadlinesBlock">
                     <h3 className="title">Deadlines and Competition</h3>

@@ -31,7 +31,7 @@ const JoinOurTeam: FC<TJoinOurTeamProps> = () => {
         </div>
         <div className="howtoApply">
             <h3 className="title">How to Apply</h3>
-            <p className="text">Just write to us hiring@noeon.ai</p>
+            <p className="text"><b>Just write to us <a href="mailto:hiring@noeon.ai">hiring@noeon.ai</a></b></p>
         </div>
     </>
 }
