@@ -13,6 +13,7 @@ import { Step } from '../../components/Step/Step'
 import { CardTeam } from '../../components/CardTeam/CardTeam'
 import { companyText, steps } from './constants'
 import banner from './fullBanner.png'
+import { JoinOurTeam } from '../../components/JoinOurTeam/JoinOurTeam'
 
 const Company = () => {
   return (
@@ -74,13 +75,14 @@ const Company = () => {
         <h3 className='title'>Contact</h3>
         <p className='text'>
           Noeon Research, Midtown Tower 18F, 9-7-1 Akasaka, Minato-ku,
-          Tokyo,&nbsp;Japan.{' '}
+          Tokyo,&nbsp;Japan. <br />
           <b>
             Contact&nbsp;us&nbsp;
             <a href='mailto:info@noeon.ai'>info@noeon.ai</a>
           </b>
         </p>
       </div>
+      <JoinOurTeam />
     </>
   )
 }

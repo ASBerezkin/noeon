@@ -71,10 +71,6 @@
       font-size: 18px;
     }
 
-    @include mediaMacbookPro {
-      max-width: 276px;
-    }
-
     &_start {
       text-align: left;
     }
