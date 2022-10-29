@@ -29,6 +29,7 @@ body {
   overflow: hidden;
   padding: 0 8px 166px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (min-width: 390px) {

@@ -1,6 +1,16 @@
+@import "src/mixins";
+
 .mainVideo {
-  width: 100%;
   max-width: 1182px;
-  margin: 109px auto 0;
+  margin: 472px -21px 0; // 424px - высота лого + 30px
   display: block;
+  width: calc(100% + 42px);
+
+  @include mediaIpadPro {
+    margin-top: 135px;
+  }
+  @include smallDesktop {
+    margin: 135px auto;
+    width: 100%;
+  }
 }
