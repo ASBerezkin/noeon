@@ -44,6 +44,10 @@
       color: var(--color-white-082);
     }
     @include mediaMacbookPro {
+      font-size: 35px;
+      max-width: 488px;
+    }
+    @include mediaMacbookProLarge {
       font-size: 45px;
       max-width: 588px;
     }
