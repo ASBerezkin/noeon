@@ -53,14 +53,6 @@
     }
   }
 
-  &__logo {
-    display: none;
-    @include mediaIpadPro {
-      display: block;
-      position: absolute;
-    }
-  }
-
   &__item {
     a {
       color: var(--color-white-100);

@@ -33,7 +33,7 @@ body {
 
 @media screen and (min-width: 390px) {
   .wrapper {
-    padding: 0 32px 166px;
+    padding: 0 21px 166px;
   }
 }
 @media screen and (min-width: 768px) {

@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const Logo = () => {
   return (
-    <>
-      <p className='menu__content'>
-        Technology for IT engineers' labour automatisation
-      </p>
+    <div className='logo-wrapper'>
       <Link to='/' className='logo-link'>
         <div className='logo'>
           <div className='logo-noeon'>NOEON</div>
@@ -15,6 +12,9 @@ export const Logo = () => {
           <div className='logo-research'>research</div>
         </div>
       </Link>
-    </>
+      <p className='logo-text'>
+        Technology for IT engineers' labour automatisation
+      </p>
+    </div>
   )
 }

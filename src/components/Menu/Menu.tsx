@@ -1,6 +1,5 @@
 import React, { FC, useState, MouseEvent, useEffect } from 'react'
 import './Menu.styles.scss'
-import { Logo } from '../Logo/Logo'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 const menuItems = [
@@ -65,9 +64,6 @@ export const Menu: FC = () => {
 
   return (
     <div className='menu__wrapper'>
-      <div className='menu__logo'>
-        <Logo />
-      </div>
       <ul className='menu'>
         {menuItems.map(menuItem => (
           <li

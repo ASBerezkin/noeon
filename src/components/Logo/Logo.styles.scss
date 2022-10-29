@@ -1,3 +1,5 @@
+@import "src/mixins";
+
 .logo {
   font-family: elevon,sans-serif;
   font-weight: 200;
@@ -5,18 +7,41 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: var(--color-white-082);
-}
 
-.logo-noeon {
-  font-size: 50pt;
-  letter-spacing: 0.2em;
-}
+  &-wrapper {
+    display: flex;
+    position: relative;
+    top: 33px;
+  }
 
-.logo-research {
-  font-size: 25pt;
-  letter-spacing: 0.5em;
-}
+  &-noeon {
+    font-size: 50pt;
+    letter-spacing: 0.2em;
+    margin-left: 10px;
+  }
+  &-research {
+    font-size: 25pt;
+    letter-spacing: 0.5em;
+  }
+  &-link {
+    text-decoration: none;
+  }
+  &-text {
+    color: var(--color-white-082);
+    font-size: 18px;
+    line-height: 120%;
+    position: absolute;
+    left: 104px;
 
-.logo-link {
-  text-decoration: none;
+    @include mediaIpadPro {
+      font-size: 25px;
+      max-width: 388px;
+      margin: 0;
+      top: 8px;
+    }
+
+    @include smallDesktop {
+      left: 136px;
+    }
+  }
 }
