@@ -2,8 +2,8 @@
 
 .companyBlock {
   margin-top: calc(566px + 56px + 85px);
-  @include mediaIpadPro {
-    margin-top: calc(573px + 56px + 85px);
+  @include smallDesktop {
+    margin-top: calc(767px + 35px);
   }
 
   &__contacts {

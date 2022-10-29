@@ -11,34 +11,20 @@ import {
 } from '../../components/Company/constants'
 import { Step } from '../../components/Step/Step'
 import { CardTeam } from '../../components/CardTeam/CardTeam'
-import { steps } from './constants'
+import { companyText, steps } from './constants'
 import banner from './fullBanner.png'
 
 const Company = () => {
   return (
     <>
-      <FullBanner src={banner} />
+      <FullBanner src={banner} withMargin />
       <div className='companyBlock'>
         <h2 className='title'>Company</h2>
-        <p className='text'>
-          Noeon Research is an R&D company designing a technology that is
-          general and universal enough to automate tasks solved by junior- and
-          mid-level software engineers.
-        </p>
-
-        <p className='text'>
-          Noeon Research focuses on the automatisation of code synthesis and
-          analysis using a hybrid approach. Our solution incorporates the
-          ability to process a large amount of data from Machine Learning as
-          well as the ability to have a strong inductive bias by efficient prior
-          knowledge encoding.
-        </p>
-
-        <p className='text'>
-          To surpass the conventional approach, Noeon Research aims to develop a
-          new approach that is less specialized, capable of extending its
-          functionality, scalable, and able to learn on the fly.
-        </p>
+        {companyText.map((text, index) => (
+          <p className='text' key={index}>
+            {text}
+          </p>
+        ))}
       </div>
       <h2 className='companyBlock__heading'>Our Values</h2>
       <div className='research__steps company__step'>

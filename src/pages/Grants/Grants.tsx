@@ -28,7 +28,7 @@ const Grants = () => {
         <div className='research__steps'>
           {steps.map(step => (
             <div className='research__steps__wrapper' key={step.id}>
-              <Step {...step} align='start' />
+              <Step {...step} align='start' id={step.id} type='numbers' />
             </div>
           ))}
         </div>

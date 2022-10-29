@@ -58,6 +58,11 @@
     }
   }
 
+  &__icons {
+    display: flex;
+    gap: 12px;
+  }
+
   &__text {
     @include text;
     margin: 0;
