@@ -8,11 +8,10 @@
   padding: 6px 8px;
   max-width: 453px;
   margin: 19px auto 0;
-  gap: 12px;
+  gap: 24px 0;
   background: rgba(18, 18, 18, 0.84);
   backdrop-filter: blur(10px);
   border-radius: 25px;
-  height: 50px;
   flex-wrap: wrap;
 
   @include mediaIpadPro {
@@ -54,6 +53,7 @@
   }
 
   &__item {
+    display: flex;
     a {
       color: var(--color-white-100);
       text-decoration: none;

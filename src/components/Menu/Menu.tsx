@@ -1,17 +1,19 @@
 import React, { FC, useState, MouseEvent, useEffect } from 'react'
 import './Menu.styles.scss'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { useWindowSize } from '../../hooks/useWindowSize'
 
 const menuItems = [
   { id: 'research', name: 'Research' },
   { id: 'company', name: 'Company' },
   { id: 'grants', name: 'Grants' },
-  { id: 'join-our-team', name: 'Team' }
+  { id: 'join-our-team', name: 'JoinOurTeam', mobileName: 'Team' }
 ]
 
 export const Menu: FC = () => {
   let location = useLocation()
   const navigate = useNavigate()
+  const { width } = useWindowSize()
   const [active, setActive] = useState(() => {
     if (location.pathname === '/company') {
       return 'company'
@@ -78,7 +80,9 @@ export const Menu: FC = () => {
               onClick={e => handleClick(e, menuItem.id)}
               href={`#${menuItem.id}`}
             >
-              {menuItem.name}
+              {menuItem.mobileName && width < 768
+                ? menuItem.mobileName
+                : menuItem.name}
             </a>
           </li>
         ))}
