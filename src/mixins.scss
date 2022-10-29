@@ -36,3 +36,11 @@
 @mixin mediaMacbookProLarge {
   @media screen and (min-width: 1728px) { @content }
 }
+
+@mixin button-link {
+  text-decoration: none;
+  border: 2px solid var(--color-white-100);
+  width: auto;
+  padding: 21px 28px;
+  text-align: center;
+}

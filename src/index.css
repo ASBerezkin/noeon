@@ -24,12 +24,16 @@ body {
   background-color: var(--color-black);
 }
 
+#root {
+  position: relative;
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
   padding: 0 8px 166px;
   margin: 0 auto;
-  position: relative;
 }
 
 @media screen and (min-width: 390px) {

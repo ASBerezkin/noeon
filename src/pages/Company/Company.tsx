@@ -41,7 +41,7 @@ const Company = () => {
         </p>
       </div>
       <h2 className='companyBlock__heading'>Our Values</h2>
-      <div className='research__steps'>
+      <div className='research__steps company__step'>
         {steps.map(step => (
           <div className='company__step-wrapper' key={step.id}>
             <Step {...step} align='start' />

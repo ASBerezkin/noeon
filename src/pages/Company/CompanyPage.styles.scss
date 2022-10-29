@@ -61,6 +61,11 @@
   }
 }
 
+.company__step {
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
 .company__step-wrapper {
   width: 100%;
 
