@@ -44,6 +44,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 39px 0 166px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .wrapper {
     max-width: 1200px;
